@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import event
 from datetime import datetime
 # Import for Migrations
-from flask_migrate import Migrate
+# from flask_migrate import Migrate
 import re
 from sqlalchemy.orm.attributes import get_history
 from sqlalchemy import inspect
