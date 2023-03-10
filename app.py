@@ -14,11 +14,11 @@ from sqlalchemy import inspect
 
 app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///crud.db' 
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:ayushi1412@localhost:5432/testdb'
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://codeash:Rux7mY8OqJSWHHVNEzw4cy4eiSqANsVn@dpg-cg5nnqhmbg53u2rjpna0-a.singapore-postgres.render.com/testdb_f4ng'
 app.secret_key="secret key"
 db = SQLAlchemy(app)
 # Settings for migrations
-migrate = Migrate(app, db)
+# migrate = Migrate(app, db)
 
 def validemail(email):
     regexEmail = r'^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'  
